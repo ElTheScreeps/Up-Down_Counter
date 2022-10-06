@@ -7,7 +7,7 @@ reg        cen;
 reg 	   up_dn;
 reg  [2:0] data;
 
-wire 	     tercnt;
+wire 	   tercnt;
 wire [2:0] count;
 
 always #5 clk = ~clk; 
