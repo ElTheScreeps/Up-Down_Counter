@@ -3,13 +3,13 @@ module DW03_updn_ctr( data, up_dn, load, cen, clk, reset, count, tercnt );
 parameter width = 8;
 
 input  [2:0]    data;
-input 		 up_dn;
-input 		 load;
-input 		 cen;
-input 		 clk;
-input 		 reset;
-output [2:0] 	 count;
-output 		 tercnt;
+input 		up_dn;
+input 		load;
+input 		cen;
+input 		clk;
+input 	        reset;
+output [2:0] 	count;
+output 		tercnt;
 
 reg    [2:0] count_intern;
 
