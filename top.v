@@ -4,7 +4,7 @@ reg        clk;
 reg        reset;
 reg        load;
 reg        cen;
-reg 	     up_dn;
+reg 	    up_dn;
 reg  [2:0] data;
 
 wire 	     tercnt;
