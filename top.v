@@ -1,21 +1,13 @@
-//---------------------------------------------------------------------------------------
-// Universitatea Transilvania din Brasov
-// Proiect     : Limbaje de descriere hardware
-// Autor       : <Gheorghe Lucian Giani Andrei>
-// Data        : <10/04/2022>
-//---------------------------------------------------------------------------------------
-// Descriere   : <Testbench>
-//---------------------------------------------------------------------------------------
 module top();
 
 reg        clk;
 reg        reset;
 reg        load;
 reg        cen;
-reg 	   up_dn;
+reg 	     up_dn;
 reg  [2:0] data;
 
-wire 	   tercnt;
+wire 	     tercnt;
 wire [2:0] count;
 
 always #5 clk = ~clk; 
