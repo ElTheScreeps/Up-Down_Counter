@@ -1,4 +1,7 @@
-Up Down Counter (DW03_updn_ctr):
+Up/Down counter (DW03_updn_ctr):
+
+![image](https://user-images.githubusercontent.com/115155585/197960631-fc250502-2e6f-4d8c-a4ab-262cc5a678c2.png)
+
 
 Description:
 
@@ -8,6 +11,16 @@ Description:
 -The counter is loaded with data by asserting load (LOW) and applying data on the data input. The data load operation is synchronous with respect to the positive edge of clk.
 - The count enable pin, cen, is active high. When cen is HIGH, the counter is active. When cen is LOW, the counter is disabled and countremains at the same value.
 - tercnt is an output port. When counting up, tercnt is HIGH at count = “111....111”. When counting down, tercnt is HIGH at count = “000....000”.
+
+Table 1 - pin description:
+
+![image](https://user-images.githubusercontent.com/115155585/197960342-8d0f2d0a-7c66-4d58-86cd-e6537d9fa4aa.png)
+
+
+Table 2 - counter operation truth table:
+
+![image](https://user-images.githubusercontent.com/115155585/197960432-77c0b99a-0b22-476e-ab75-58fcfcdd8b79.png)
+
 
 How to use this files:
 
