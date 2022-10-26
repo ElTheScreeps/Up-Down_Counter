@@ -8,3 +8,12 @@ Description:
 -The counter is loaded with data by asserting load (LOW) and applying data on the data input. The data load operation is synchronous with respect to the positive edge of clk.
 - The count enable pin, cen, is active high. When cen is HIGH, the counter is active. When cen is LOW, the counter is disabled and countremains at the same value.
 - tercnt is an output port. When counting up, tercnt is HIGH at count = “111....111”. When counting down, tercnt is HIGH at count = “000....000”.
+
+How to use this files:
+
+1.Downlaod the files;
+2.Put them in a directory;
+3.Open Modelsim;
+4.Change directory to the directory who contain the files;
+5.Create a project and add the files;
+6.Compile the files and start stimulate.
