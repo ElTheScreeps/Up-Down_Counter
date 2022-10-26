@@ -1,6 +1,6 @@
 Up/Down counter (DW03_updn_ctr):
 
-![image](https://user-images.githubusercontent.com/115155585/197960631-fc250502-2e6f-4d8c-a4ab-262cc5a678c2.png)
+![image](https://user-images.githubusercontent.com/115155585/197960770-8627e1b6-7bf6-42ba-9ffa-1e9a83050c93.png)
 
 
 Description:
