@@ -6,10 +6,10 @@ reg              clk;
 reg              reset;
 reg              load;
 reg              cen;
-reg 	           up_dn;
+reg 	          up_dn;
 reg  [width-1:0] data;
 
-wire 	           tercnt;
+wire 	          tercnt;
 wire [width-1:0] count;
 
 always #5 clk = ~clk; 
