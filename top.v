@@ -37,6 +37,15 @@ load     = 0;
 repeat(15) @(posedge clk);
 end
 
-DW03_updn_ctr U1 (.data(data), .up_dn(up_dn), .load(load), .cen(cen), .clk(clk), .reset(reset), .count(count), .tercnt(tercnt));
+DW03_updn_ctr #(width) T (
+.data(data),
+.up_dn(up_dn),
+.load(load),
+.cen(cen),
+.clk(clk),
+.reset(reset),
+.count(count),
+.tercnt(tercnt)
+);
 
 endmodule
