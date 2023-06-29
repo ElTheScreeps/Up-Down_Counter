@@ -1,4 +1,4 @@
-module DW03_UPDN_CTR( data, up_dn, load, cen, clk, reset, count, tercnt );
+module DW03_UPDN_CTR( data, up_dn, load, cen, clk, rst, count, tercnt );
 
 parameter width = 4;
 
@@ -7,16 +7,16 @@ input 	           up_dn;
 input 	           load;
 input 	           cen;
 input  	           clk;
-input 	           reset;
+input 	           rst;
 output [width-1:0] count;
 output 	           tercnt;
 
 reg    [width-1:0] count_intern;
 
-always @(posedge(clk) or negedge(reset))
+always @(posedge(clk) or negedge(rst))
 begin
-	if (~reset) count_intern <= 'b0;
-	else if (reset & load == 0) count_intern <= data;
+	if (~rst) count_intern <= 'b0;
+	else if (rst & load == 0) count_intern <= data;
 	else if (cen == 0 & load == 1) count_intern <= count_intern;
 	else if (cen == 1 & load == 1)
 	begin
