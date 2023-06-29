@@ -1,4 +1,4 @@
-Up/Down counter (DW03_updn_ctr):
+# Up/Down counter (DW03_updn_ctr):
 
 ![DW03_UPDN_CTR Diagram](https://github.com/ElTheScreeps/Up-Down_Counter/assets/115155585/37e99cf9-2f17-48ff-bdcd-4a8e861d5e5d)
 
