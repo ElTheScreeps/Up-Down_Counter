@@ -3,7 +3,7 @@ module DW03_UPDN_CTR_TB();
 parameter width = 4;
 
 reg              clk;
-reg              reset;
+reg              rst;
 reg              load;
 reg              cen;
 reg 	         up_dn;
@@ -16,15 +16,15 @@ always #5 clk = ~clk;
 
 initial begin
 clk   	 = 0;
-reset 	 = 1;
+rst 	 = 1;
 load  	 = 1;
 cen   	 = 0;
 up_dn 	 = 1;
 data 	 = 4'b0111;
 repeat(1) @(posedge clk);
-reset 	 = 0;
+rst 	 = 0;
 repeat(1) @(posedge clk);
-reset 	 = 1;
+rst 	 = 1;
 load  	 = 0;
 repeat(5) @(posedge clk);
 cen   	 = 1;
@@ -37,15 +37,6 @@ load     = 0;
 repeat(15) @(posedge clk);
 end
 
-DW03_updn_ctr #(width) T (
-.data(data),
-.up_dn(up_dn),
-.load(load),
-.cen(cen),
-.clk(clk),
-.reset(reset),
-.count(count),
-.tercnt(tercnt)
-);
+DW03_UPDN_CTR #(width) T (.data, .up_dn, .load, .cen, .clk, .rst, .count, .tercnt);
 
 endmodule
